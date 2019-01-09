@@ -1,0 +1,36 @@
+Gene_data.csv
+-----------------------------
+contains 30 samples with 22411 features
+
+meta_data.csv
+-----------------------------
+Contains 30 samples
+
+Aim
+----------------------------------------------------
+Feature extraction on Gene data analysis which contains 22411 features using prinicipal component analysis.
+In this assignment I extracted two prinicipal components(PC1 & PC2) to visualize the gene data
+
+Prinicipal component Analysis
+-----------------------------------------------------
+The main idea of principal component analysis (PCA) is to reduce the dimensionality of a data set consisting of many variables correlated with each other, either heavily or lightly, while retaining the variation present in the dataset, up to the maximum extent. The same is done by transforming the variables to a new set of variables, which are known as the principal components (or simply, the PCs) and are orthogonal, ordered such that the retention of variation present in the original variables decreases as we move down in the order. So, in this way, the 1st principal component retains maximum variation that was present in the original components. The principal components are the eigenvectors of a covariance matrix, and hence they are orthogonal.
+
+Methodology
+-----------------------------------------------------
+Exploratory Data Analysis
+x shape: (30, 22411)
+y shape: (30,)
+x dataset contains nan values in columns : [12076]
+removed nan values in column: 12076
+Standardising Data
+Creating Co-variance Matrix
+Calculate Eigen values
+PCA Analysis (Plot of % Variance Explained Vs # of Features)
+Scatter plot of PC1 and PC2
+
+
+Conclusion
+-----------------------------------------------------------
+PC1 explains 20.15% of variance in dataset and PC2 explains 32.93% of variance in dataset. PC1 and PC2 combined are contributing more than 53% of variance of dataset remaining 22409 dimensions are contributing remaining 47% of variance of dataset. Our scree plot shows that the first 2 principal components describe most of the variation (information) within the data. 
+This is a major reduction from the initial 22411 features. Therefore, the first 2 eigenvectors should be used to construct the dimensions for the new feature space.
+After feature extraction using PCA. We visualized the dataset containing PC1,PC2 and target variable. still genes of similar groups formed clusters and from this we can say that whole dataset can be analysed with PC1 and PC2.
